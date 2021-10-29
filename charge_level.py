@@ -16,6 +16,10 @@ def charge_level(k):
     oled.fill_rect(9, 9, 22, 42, 1)
     #charge level
     oled.fill_rect(9, 9, 22, k, 0)
+    
+    oled.text("Charge level:",60,15)
+    oled.text(str(level),60,30)
+    oled.text("%",67,30)
     oled.show()
 
 while True:
